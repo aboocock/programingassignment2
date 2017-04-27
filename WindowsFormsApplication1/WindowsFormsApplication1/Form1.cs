@@ -322,33 +322,21 @@ namespace WindowsFormsApplication1
             else if (button4count == "4")
             {
                 wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
-                wordbuildertextbox.Text += Str_KeyStrokes + "3";
+                wordbuildertextbox.Text += Str_KeyStrokes + "G";
                 button4count = "5";
 
             }
             else if (button4count == "5")
             {
                 wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
-                wordbuildertextbox.Text += Str_KeyStrokes + "W";
+                wordbuildertextbox.Text += Str_KeyStrokes + "H";
                 button4count = "6";
 
             }
             else if (button4count == "6")
             {
                 wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
-                wordbuildertextbox.Text += Str_KeyStrokes + "X";
-                button4count = "7";
-            }
-            else if (button4count == "7")
-            {
-                wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
-                wordbuildertextbox.Text += Str_KeyStrokes + "Y";
-                button4count = "8";
-            }
-            else if (button4count == "8")
-            {
-                wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
-                wordbuildertextbox.Text += Str_KeyStrokes + "Z";
+                wordbuildertextbox.Text += Str_KeyStrokes + "I";
                 button4count = "0";
                 button4Firstvisit = "no";
             }
