@@ -41,8 +41,35 @@ namespace WindowsFormsApplication1
 
         private void button6_Click(object sender, EventArgs e)
         {
+            if (button7Firstvisit == "no")
+            {
 
-        }
+                button7count = "1";
+            }
+            if (button7count == "0")
+            {
+                wordbuildertextbox.Text += Str_KeyStrokes + ",";
+                button7count = "1";
+            }
+            else if (button7count == "1")
+            {
+                wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
+                wordbuildertextbox.Text += Str_KeyStrokes + ".";
+                button7count = "2";
+            }
+            else if (button7count == "2")
+            {
+                wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
+                wordbuildertextbox.Text += Str_KeyStrokes + "''";
+                button7count = "3";
+            }
+            else if (button7count == "3")
+            {
+                wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
+                wordbuildertextbox.Text += Str_KeyStrokes + "7";
+                button7count = "0";
+                button7Firstvisit = "no";
+            }
 
         private void multipress_Click(object sender, EventArgs e)
         {
