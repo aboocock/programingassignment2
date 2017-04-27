@@ -206,6 +206,7 @@
             this.button9.TabIndex = 32;
             this.button9.Text = "4\r\nG H I";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button8
             // 

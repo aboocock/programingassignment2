@@ -22,6 +22,9 @@ namespace WindowsFormsApplication1
         string button3count = "0";
         string button3Firstvisit = "yes";
 
+        string button4count = "0";
+        string button4Firstvisit = "yes";
+
         public Form1()
         {
             InitializeComponent();
@@ -284,5 +287,14 @@ namespace WindowsFormsApplication1
                 button3Firstvisit = "no";
             }
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+             else if (button3count == "6")
+            {
+                wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
+                wordbuildertextbox.Text += Str_KeyStrokes + "X";
+                button3count = "7";
+            }
     }
 }
