@@ -412,50 +412,50 @@ namespace WindowsFormsApplication1
             }
             if (button6count == "0")
             {
-                wordbuildertextbox.Text += Str_KeyStrokes + "t";
+                wordbuildertextbox.Text += Str_KeyStrokes + "m";
                 button6count = "1";
             }
             else if (button6count == "1")
             {
                 wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
-                wordbuildertextbox.Text += Str_KeyStrokes + "u";
+                wordbuildertextbox.Text += Str_KeyStrokes + "n";
                 button6count = "2";
             }
             else if (button6count == "2")
             {
                 wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
-                wordbuildertextbox.Text += Str_KeyStrokes + "v";
+                wordbuildertextbox.Text += Str_KeyStrokes + "o";
                 button6count = "3";
             }
             else if (button6count == "3")
             {
                 wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
-                wordbuildertextbox.Text += Str_KeyStrokes + "2";
+                wordbuildertextbox.Text += Str_KeyStrokes + "6";
                 button6count = "4";
 
             }
             else if (button6count == "4")
             {
                 wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
-                wordbuildertextbox.Text += Str_KeyStrokes + "T";
+                wordbuildertextbox.Text += Str_KeyStrokes + "M";
                 button6count = "5";
 
             }
             else if (button6count == "5")
             {
                 wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
-                wordbuildertextbox.Text += Str_KeyStrokes + "U";
+                wordbuildertextbox.Text += Str_KeyStrokes + "N";
                 button6count = "6";
 
             }
 
-            else if (button6count == "8")
+            else if (button6count == "6")
             {
                 wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
-                wordbuildertextbox.Text += Str_KeyStrokes + "V";
+                wordbuildertextbox.Text += Str_KeyStrokes + "O";
                 button6count = "0";
                 button6Firstvisit = "no";
             }
+        }
     }
 }
-
