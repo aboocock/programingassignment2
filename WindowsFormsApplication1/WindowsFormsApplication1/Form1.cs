@@ -54,5 +54,13 @@ namespace WindowsFormsApplication1
         {
             wordbuilder.AppendText(Environment.NewLine);
         }
+
+        private void mode_Click(object sender, EventArgs e)
+        {
+            if (multipress.Text == "Multi-Press")
+            { multipress.Text = "Prediction"; }
+            else
+            { multipress.Text = "Multi-Press";}
+        }
     }
 }

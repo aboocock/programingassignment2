@@ -298,6 +298,7 @@
             this.mode.TabIndex = 24;
             this.mode.Text = "mode";
             this.mode.UseVisualStyleBackColor = false;
+            this.mode.Click += new System.EventHandler(this.mode_Click);
             // 
             // wordbuildertextbox
             // 
