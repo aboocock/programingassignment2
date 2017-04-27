@@ -37,6 +37,10 @@ namespace WindowsFormsApplication1
         string button8count = "0";
         string button8Firstvisit = "yes";
 
+        string button9count = "0";
+        string button9Firstvisit = "yes";
+
+
         public Form1()
         {
             InitializeComponent();
