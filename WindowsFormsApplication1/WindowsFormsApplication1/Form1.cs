@@ -51,29 +51,52 @@ namespace WindowsFormsApplication1
             }
             if (button7count == "0")
             {
-                wordbuildertextbox.Text += Str_KeyStrokes + ",";
+                wordbuildertextbox.Text += Str_KeyStrokes + "a";
                 button7count = "1";
             }
             else if (button7count == "1")
             {
                 wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
-                wordbuildertextbox.Text += Str_KeyStrokes + ".";
+                wordbuildertextbox.Text += Str_KeyStrokes + "b";
                 button7count = "2";
             }
             else if (button7count == "2")
             {
                 wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
-                wordbuildertextbox.Text += Str_KeyStrokes + "''";
+                wordbuildertextbox.Text += Str_KeyStrokes + "c";
                 button7count = "3";
             }
             else if (button7count == "3")
             {
                 wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
-                wordbuildertextbox.Text += Str_KeyStrokes + "7";
+                wordbuildertextbox.Text += Str_KeyStrokes + "8";
+                button7count = "4";
+            }
+            else if (button7count == "4")
+            {
+                wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
+                wordbuildertextbox.Text += Str_KeyStrokes + "A";
+                button7count = "5";
+            }
+            else if (button7count == "5")
+            {
+                wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
+                wordbuildertextbox.Text += Str_KeyStrokes + "B";
+                button7count = "6";
+            }
+  
+
+
+            else if (button7count == "6")
+
+            {
+                wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
+                wordbuildertextbox.Text += Str_KeyStrokes + "C";
                 button7count = "0";
                 button7Firstvisit = "no";
             }
 
+        }
         private void multipress_Click(object sender, EventArgs e)
         {
 
