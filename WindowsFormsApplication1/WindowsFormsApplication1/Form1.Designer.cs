@@ -257,6 +257,7 @@
             this.button5.TabIndex = 28;
             this.button5.Text = "7\r\n, . \"\"";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
