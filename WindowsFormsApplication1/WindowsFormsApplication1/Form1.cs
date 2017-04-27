@@ -25,6 +25,9 @@ namespace WindowsFormsApplication1
         string button4count = "0";
         string button4Firstvisit = "yes";
 
+        string button5count = "0";
+        string button5Firstvisit = "yes";
+
         public Form1()
         {
             InitializeComponent();
@@ -341,6 +344,60 @@ namespace WindowsFormsApplication1
                 button4Firstvisit = "no";
             }
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            if (button5Firstvisit == "no")
+            {
+
+                button5count = "1";
+            }
+            if (button5count == "0")
+            {
+                wordbuildertextbox.Text += Str_KeyStrokes + "t";
+                button5count = "1";
+            }
+            else if (button5count == "1")
+            {
+                wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
+                wordbuildertextbox.Text += Str_KeyStrokes + "u";
+                button2count = "2";
+            }
+            else if (button2count == "2")
+            {
+                wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
+                wordbuildertextbox.Text += Str_KeyStrokes + "v";
+                button2count = "3";
+            }
+            else if (button2count == "3")
+            {
+                wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
+                wordbuildertextbox.Text += Str_KeyStrokes + "2";
+                button2count = "4";
+
+            }
+            else if (button2count == "4")
+            {
+                wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
+                wordbuildertextbox.Text += Str_KeyStrokes + "T";
+                button2count = "5";
+
+            }
+            else if (button2count == "5")
+            {
+                wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
+                wordbuildertextbox.Text += Str_KeyStrokes + "U";
+                button2count = "6";
+
+            }
+
+            else if (button2count == "8")
+            {
+                wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
+                wordbuildertextbox.Text += Str_KeyStrokes + "V";
+                button2count = "0";
+                button2Firstvisit = "no";
+            }
     }
 }
 
