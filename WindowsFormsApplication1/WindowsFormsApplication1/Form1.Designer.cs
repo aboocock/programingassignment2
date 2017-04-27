@@ -144,6 +144,7 @@
             this.button15.TabIndex = 38;
             this.button15.Text = "2\r\nT U V";
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button14
             // 
@@ -156,6 +157,7 @@
             this.button14.TabIndex = 37;
             this.button14.Text = "1\r\nP Q R S";
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button13
             // 
