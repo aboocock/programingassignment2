@@ -32,7 +32,7 @@ namespace WindowsFormsApplication1
         string button6Firstvisit = "yes";
 
         string button7count = "0";
-        string button6firstvisit = "yes";
+        string button7firstvisit = "yes";
 
         public Form1()
         {
