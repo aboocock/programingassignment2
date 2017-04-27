@@ -290,11 +290,69 @@ namespace WindowsFormsApplication1
 
         private void button9_Click(object sender, EventArgs e)
         {
-             else if (button3count == "6")
+            if (button4Firstvisit == "no")
+            {
+
+                button4count = "1";
+            }
+            if (button4count == "0")
+            {
+                wordbuildertextbox.Text += Str_KeyStrokes + "g";
+                button4count = "1";
+            }
+            else if (button4count == "1")
+            {
+                wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
+                wordbuildertextbox.Text += Str_KeyStrokes + "h";
+                button4count = "2";
+            }
+            else if (button4count == "2")
+            {
+                wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
+                wordbuildertextbox.Text += Str_KeyStrokes + "i";
+                button4count = "3";
+            }
+            else if (button4count == "3")
+            {
+                wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
+                wordbuildertextbox.Text += Str_KeyStrokes + "4";
+                button4count = "4";
+
+            }
+            else if (button4count == "4")
+            {
+                wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
+                wordbuildertextbox.Text += Str_KeyStrokes + "3";
+                button4count = "5";
+
+            }
+            else if (button4count == "5")
+            {
+                wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
+                wordbuildertextbox.Text += Str_KeyStrokes + "W";
+                button4count = "6";
+
+            }
+            else if (button4count == "6")
             {
                 wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
                 wordbuildertextbox.Text += Str_KeyStrokes + "X";
-                button3count = "7";
+                button4count = "7";
             }
+            else if (button4count == "7")
+            {
+                wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
+                wordbuildertextbox.Text += Str_KeyStrokes + "Y";
+                button4count = "8";
+            }
+            else if (button4count == "8")
+            {
+                wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
+                wordbuildertextbox.Text += Str_KeyStrokes + "Z";
+                button4count = "0";
+                button4Firstvisit = "no";
+            }
+        }
     }
 }
+
