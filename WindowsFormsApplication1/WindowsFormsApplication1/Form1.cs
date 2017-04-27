@@ -354,50 +354,51 @@ namespace WindowsFormsApplication1
             }
             if (button5count == "0")
             {
-                wordbuildertextbox.Text += Str_KeyStrokes + "t";
+                wordbuildertextbox.Text += Str_KeyStrokes + "j";
                 button5count = "1";
             }
             else if (button5count == "1")
             {
                 wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
-                wordbuildertextbox.Text += Str_KeyStrokes + "u";
-                button2count = "2";
+                wordbuildertextbox.Text += Str_KeyStrokes + "k";
+                button5count = "2";
             }
-            else if (button2count == "2")
+            else if (button5count == "2")
             {
                 wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
-                wordbuildertextbox.Text += Str_KeyStrokes + "v";
-                button2count = "3";
+                wordbuildertextbox.Text += Str_KeyStrokes + "l";
+                button5count = "3";
             }
-            else if (button2count == "3")
+            else if (button5count == "3")
             {
                 wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
-                wordbuildertextbox.Text += Str_KeyStrokes + "2";
-                button2count = "4";
+                wordbuildertextbox.Text += Str_KeyStrokes + "5";
+                button5count = "4";
 
             }
-            else if (button2count == "4")
+            else if (button5count == "4")
             {
                 wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
-                wordbuildertextbox.Text += Str_KeyStrokes + "T";
-                button2count = "5";
+                wordbuildertextbox.Text += Str_KeyStrokes + "J";
+                button5count = "5";
 
             }
-            else if (button2count == "5")
+            else if (button5count == "5")
             {
                 wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
-                wordbuildertextbox.Text += Str_KeyStrokes + "U";
-                button2count = "6";
+                wordbuildertextbox.Text += Str_KeyStrokes + "K";
+                button5count = "6";
 
             }
 
-            else if (button2count == "8")
+            else if (button5count == "8")
             {
                 wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
-                wordbuildertextbox.Text += Str_KeyStrokes + "V";
-                button2count = "0";
-                button2Firstvisit = "no";
+                wordbuildertextbox.Text += Str_KeyStrokes + "L";
+                button5count = "0";
+                button5Firstvisit = "no";
             }
+        }
     }
 }
 
