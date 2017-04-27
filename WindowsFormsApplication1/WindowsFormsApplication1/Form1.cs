@@ -596,7 +596,7 @@ namespace WindowsFormsApplication1
             else if (button9count == "6")
             {
                 wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
-                wordbuildertextbox.Text += Str_KeyStrokes + "F"
+                wordbuildertextbox.Text += Str_KeyStrokes + "F";
                 button9count = "0";
                 button9Firstvisit = "no";
             }
