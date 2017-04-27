@@ -12,6 +12,7 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
+        string Str_KeyStrokes = "";
         public Form1()
         {
             InitializeComponent();
@@ -61,6 +62,16 @@ namespace WindowsFormsApplication1
             { multipress.Text = "Prediction"; }
             else
             { multipress.Text = "Multi-Press";}
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            wordbuilder.Text += wordbuildertextbox.Text + " ";
+            wordbuildertextbox.Text = "";
+            timer1.Enabled = false;
+            Str_KeyStrokes = "";
+
+
         }
     }
 }

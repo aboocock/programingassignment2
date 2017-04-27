@@ -94,6 +94,7 @@
             this.button19.TabIndex = 42;
             this.button19.Text = "000\r\n[_]";
             this.button19.UseVisualStyleBackColor = false;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // button18
             // 
