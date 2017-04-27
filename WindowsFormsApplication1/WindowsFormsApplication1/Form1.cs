@@ -30,6 +30,9 @@ namespace WindowsFormsApplication1
 
         string button6count = "0";
         string button6Firstvisit = "yes";
+        
+        string button7count = "0"
+        string button6firstvisit = "yes";
 
         public Form1()
         {
@@ -457,5 +460,5 @@ namespace WindowsFormsApplication1
                 button6Firstvisit = "no";
             }
         }
+
     }
-}
