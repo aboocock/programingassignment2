@@ -16,8 +16,8 @@ namespace WindowsFormsApplication1
         string button1count = "0";
         string button1Firstvisit = "yes";
 
-        string button8count = "0";
-        string button8Firstvisit = "yes";
+        string button2count = "0";
+        string button2Firstvisit = "yes";
 
         public Form1()
         {
@@ -86,7 +86,7 @@ namespace WindowsFormsApplication1
 
         private void button14_Click(object sender, EventArgs e)
         {
-            if (button8Firstvisit == "no")
+            if (button1Firstvisit == "no")
             {
 
                 button1count = "1";
@@ -157,58 +157,63 @@ namespace WindowsFormsApplication1
 
         private void button15_Click(object sender, EventArgs e)
         {
-            if (button8Firstvisit == "no")
+            if (button2Firstvisit == "no")
             {
 
-                button8count = "1";
+                button2count = "1";
             }
-            if (button8count == "0")
+            if (button2count == "0")
             {
-                wordbuildertextbox.Text += Str_KeyStrokes + "T";
-                button8count = "1";
+                wordbuildertextbox.Text += Str_KeyStrokes + "t";
+                button2count = "1";
             }
-            else if (button8count == "1")
-            {
-                wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
-                wordbuildertextbox.Text += Str_KeyStrokes + "U";
-                button8count = "2";
-            }
-            else if (button8count == "2")
+            else if (button2count == "1")
             {
                 wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
-                wordbuildertextbox.Text += Str_KeyStrokes + "V";
-                button8count = "3";
+                wordbuildertextbox.Text += Str_KeyStrokes + "u";
+                button2count = "2";
             }
-            else if (button8count == "3")
+            else if (button2count == "2")
+            {
+                wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
+                wordbuildertextbox.Text += Str_KeyStrokes + "v";
+                button2count = "3";
+            }
+            else if (button2count == "3")
             {
                 wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
                 wordbuildertextbox.Text += Str_KeyStrokes + "2";
-                button8count = "4";
+                button2count = "4";
 
             }
-            else if (button8count == "4")
+            else if (button2count == "4")
             {
                 wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
                 wordbuildertextbox.Text += Str_KeyStrokes + "T";
-                button8count = "5";
+                button2count = "5";
 
             }
-            else if (button8count == "5")
+            else if (button2count == "5")
             {
                 wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
                 wordbuildertextbox.Text += Str_KeyStrokes + "U";
-                button8count = "6";
+                button2count = "6";
 
             }
             
-            else if (button8count == "8")
+            else if (button2count == "8")
             {
                 wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
                 wordbuildertextbox.Text += Str_KeyStrokes + "V";
-                button8count = "0";
-                button8Firstvisit = "no";
+                button2count = "0";
+                button2Firstvisit = "no";
 
             }
+        }
+
+        private void previous_Click(object sender, EventArgs e)
+        {
+            wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
         }
     }
 }
