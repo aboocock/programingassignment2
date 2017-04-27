@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.multipress = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
@@ -48,11 +49,12 @@
             this.previous = new System.Windows.Forms.Button();
             this.next = new System.Windows.Forms.Button();
             this.mode = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.wordbuildertextbox = new System.Windows.Forms.RichTextBox();
+            this.wordbuilder = new System.Windows.Forms.RichTextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -116,6 +118,7 @@
             this.enter.TabIndex = 40;
             this.enter.Text = "enter";
             this.enter.UseVisualStyleBackColor = false;
+            this.enter.Click += new System.EventHandler(this.enter_Click);
             // 
             // button16
             // 
@@ -296,22 +299,22 @@
             this.mode.Text = "mode";
             this.mode.UseVisualStyleBackColor = false;
             // 
-            // richTextBox1
+            // wordbuildertextbox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(162, 196);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(110, 30);
-            this.richTextBox1.TabIndex = 23;
-            this.richTextBox1.Text = "";
+            this.wordbuildertextbox.Location = new System.Drawing.Point(162, 196);
+            this.wordbuildertextbox.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.wordbuildertextbox.Name = "wordbuildertextbox";
+            this.wordbuildertextbox.Size = new System.Drawing.Size(110, 30);
+            this.wordbuildertextbox.TabIndex = 23;
+            this.wordbuildertextbox.Text = "";
             // 
-            // richTextBox2
+            // wordbuilder
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(71, 21);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(410, 169);
-            this.richTextBox2.TabIndex = 45;
-            this.richTextBox2.Text = "";
+            this.wordbuilder.Location = new System.Drawing.Point(71, 21);
+            this.wordbuilder.Name = "wordbuilder";
+            this.wordbuilder.Size = new System.Drawing.Size(410, 169);
+            this.wordbuilder.TabIndex = 45;
+            this.wordbuilder.Text = "";
             // 
             // menuStrip1
             // 
@@ -336,12 +339,16 @@
             this.configureToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
             this.configureToolStripMenuItem.Text = "configure";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(545, 489);
-            this.Controls.Add(this.richTextBox2);
+            this.Controls.Add(this.wordbuilder);
             this.Controls.Add(this.multipress);
             this.Controls.Add(this.button20);
             this.Controls.Add(this.button19);
@@ -362,7 +369,7 @@
             this.Controls.Add(this.previous);
             this.Controls.Add(this.next);
             this.Controls.Add(this.mode);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.wordbuildertextbox);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
@@ -397,11 +404,12 @@
         private System.Windows.Forms.Button previous;
         private System.Windows.Forms.Button next;
         private System.Windows.Forms.Button mode;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox wordbuildertextbox;
+        private System.Windows.Forms.RichTextBox wordbuilder;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem configureToolStripMenuItem;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

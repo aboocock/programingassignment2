@@ -26,5 +26,33 @@ namespace WindowsFormsApplication1
         {
           
             }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void WithinTimer()
+        {
+            timer1.Enabled = true;
+            try
+            {
+                wordbuildertextbox.Text = wordbuildertextbox.Text.Remove(wordbuildertextbox.Text.Length - 1);
+            }
+            catch
+            {
+                
+            }
+            //if (ListBox. > (WhichListbox.Items.Count - 1))
+            //{ }
+
+
+
+        }
+
+        private void enter_Click(object sender, EventArgs e)
+        {
+            wordbuilder.AppendText(Environment.NewLine);
+        }
     }
 }
